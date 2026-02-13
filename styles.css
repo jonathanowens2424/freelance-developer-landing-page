@@ -3,6 +3,10 @@
   --secondary-color: #0f2a3d;
 }
 
+html {
+  margin: 0;
+  padding: 0;
+}
 .flex {
   display: flex;
 }
@@ -10,4 +14,36 @@
 .flex img {
   width: 500px;
   margin-left: auto;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.card img {
+  height: 300px;
+}
+
+.bg-image {
+  background-image: url(/images/tealHeroImage.webp);
+  background-size: cover;
+  padding: 2rem;
+}
+
+.bg-image-footer {
+  background-position: bottom;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px black;
+}
+
+.accordion-button {
+  background-color: #4ad9ca;
+  color: white;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #7fe5d8;
+  color: white;
 }
