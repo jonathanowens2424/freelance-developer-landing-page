@@ -13,15 +13,19 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="d-flex flex-column">
+    <!-- Nav bar -->
     <nav
       class="navbar navbar-expand-sm sticky-top bg-image text-shadow"
       id="teal-text"
     >
       <div class="container-fluid">
-        <h1 class="d-none d-md-inline navbar-brand text-white fs-sm-3" href="#">Jonathan Owens - Freelance Web Developer</h1>
-        <h1 class="d-md-none navbar-brand text-white fs-sm-3" href="#">Jonathan Owens</h1>
-          
+        <h1 class="d-none d-md-inline navbar-brand text-white fs-sm-3" href="#">
+          Jonathan Owens - Freelance Web Developer
         </h1>
+        <h1 class="d-md-none navbar-brand text-white fs-sm-3" href="#">
+          Jonathan Owens
+        </h1>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -36,101 +40,118 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link text-white" href="#About">About</a>
+              <a class="nav-link text-white" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#services">Services</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="#portfolio">Portfolio</a>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link text-white" href="#services">Services</a>
+              <a class="nav-link text-white" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <main>
-      <div class="container">
-      </div>
-      <div class="container my-3">
-        <h2>About Me</h2>
-        <div class="d-flex flex-column flex-md-row">
-          <p id="about" class="">
-            I design and code websites, and I love what I do. Hailing from O'Fallon, Missouri, I learned code on a whim several years ago and have been learning more ever since. Nice to meet you!
-
-          </p>
-          <img src="images/jonathanPortrait.webp" class="align-self-center" style="max-width: 400px;" alt="..." />
+      <!-- About Me -->
+      <p id="about"></p>
+      <section class="container my-5">
+        <h2 class="mb-4">About Me</h2>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="lead mb-4 mb-md-0">
+              I design and code websites, and I love what I do. Hailing from
+              O'Fallon, Missouri, I learned code on a whim several years ago and
+              have been learning more ever since. Nice to meet you!
+            </p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img
+              src="images/jonathanPortrait.webp"
+              class="img-fluid shadow-sm"
+              alt="Portrait of Jonathan"
+            />
+          </div>
         </div>
-      </div>
-      <div class="container cta-section">
+      </section>
+
+      <!-- Services Section -->
+      <section class="container cta-section my-4">
         <h2 id="services">Want to improve your business?</h2>
         <p>
-          With a better online presence, you establish credibility that helps you stand out from the others. I can help you with that. Here is a list of what I can do:
+          With a better online presence, you establish credibility that helps
+          you stand out from the others. I can help you with that. Here is a
+          list of what I can do:
         </p>
         <ul>
-          <li>Website Design: I will make a clean, mobile-friendly design for you or your company.</li>
-          <li>Revisions: Not like what you see? </li>
+          <li>
+            Website Design: I will make a clean, mobile-friendly design for you
+            or your company.
+          </li>
+          <li>Revisions: Not like what you see?</li>
           <li>JavaScript</li>
         </ul>
-      </div>
-      <div class="container my-2">
-        
-        <h2 id="portfolio">Portfolio</h2>
-        <div class="card-group">
-          <div class="card">
-            <a href="https://jonathanbeard.netlify.app/">
-              <img
-                src="images/jonathanBeardDesktop.webp"
-                class="card-img-top"
-                alt="..."
-              />
-            </a>
+      </section>
+      <!-- Portfolio -->
+      <section class="container my-4">
+        <h2 id="portfolio" class="my-3">Portfolio</h2>
+        <div class="d-flex flex-column flex-md-row gap-3">
+          <div class="card flex-grow-1" style="border-radius: 0">
+            <img
+              src="images/jonathanBeardDesktop.webp"
+              class="card-img-top"
+              style="border-radius: 0"
+              alt="..."
+            />
             <div class="card-body">
               <h5 class="card-title">Audio Engineer Website</h5>
               <p class="card-text">
-                I designed and built a custom website for my audio engineer friend, using Bootstrap to ensure a responsive layout.
-
-I ultilize the Spotify API to keep the site updated with his discography playlist. This was my first time working with someone else to make a web project.
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
               </p>
             </div>
           </div>
-          <div class="card">
-            <a href="https://jonathansantiques.netlify.app/">
-              <img
-                src="images/jonathansAntiquesDesktop.webp"
-                class="card-img-top"
-                alt="..."
-              />
-            </a>
-            <div class="card-body">
-              <h5 class="card-title">Fictional WordPress Business</h5>
-              <p class="card-text">
-                I designed and developed a fictional antique store website using WordPress with the Astra theme.
-              </p>
-            </div>
-          </div>
-          <div class="card">
+          <div class="card flex-grow-1" style="border-radius: 0">
             <img
-              src="images/punkRockBusinessSolutions.webp"
+              src="/images/jonathansAntiquesDesktop.webp"
               class="card-img-top"
+              style="border-radius: 0"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Fictional WordPress Site</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+            </div>
+          </div>
+          <div class="card flex-grow-1">
+            <img
+              src="images/the-rude-quiz.webp"
+              class="card-img-top"
+              style="border-radius: 0"
               alt="..."
             />
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This card has even longer content
-                than the first to show that equal height action. Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Esse, repellat? Hic
-                eos sequi, optio alias ab quia expedita, officia quas aliquam
-                excepturi ex consequuntur fuga perspiciatis nisi omnis
-                recusandae molestias!
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
               </p>
             </div>
           </div>
         </div>
-      </div>
-      
-      <div class="accordion container my-3" id="accordionExample">
+      </section>
+      <!-- FAQ -->
+      <section
+        class="accordion accordion-flush container my-4"
+        id="accordionExample"
+      >
         <h2>FAQs</h2>
         <div class="accordion-item">
           <h2 class="accordion-header">
@@ -147,7 +168,7 @@ I ultilize the Spotify API to keep the site updated with his discography playlis
           </h2>
           <div
             id="collapseOne"
-            class="accordion-collapse collapse show"
+            class="accordion-collapse collapse"
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
@@ -222,11 +243,13 @@ I ultilize the Spotify API to keep the site updated with his discography playlis
             </div>
           </div>
         </div>
-      </div>
-      <div class="container my-3 cta-section">
+      </section>
+      <!-- CTA -->
+      <div class="container my-3 cta-section" id="contact">
         <h2>Let's start a project!</h2>
         <p>
-          Interested in working together? We should queue up a time to chat. I’ll buy the coffee.
+          Interested in working together? We should queue up a time to chat.
+          I’ll buy the coffee.
         </p>
       </div>
     </main>
@@ -234,8 +257,13 @@ I ultilize the Spotify API to keep the site updated with his discography playlis
     <footer
       class="container-fluid bg-black text-white mt-auto text-center p-4 bg-image bg-image-footer"
     >
-       © <span id="copyright-year"><script>document.write(new Date().getFullYear())</script></span> Jonathan Owens. All rights reserved.
-</footer>
+      ©
+      <span id="copyright-year"
+        ><script>
+          document.write(new Date().getFullYear());
+        </script></span
+      >
+      Jonathan Owens. All rights reserved.
     </footer>
 
     <script
