@@ -18,7 +18,8 @@
       id="teal-text"
     >
       <div class="container-fluid">
-        <h1 class="navbar-brand text-white" href="#">Jonathan Owens - Freelance Web Developer</h1>
+        <h1 class="d-none d-md-inline navbar-brand text-white fs-sm-3" href="#">Jonathan Owens - Freelance Web Developer</h1>
+        <h1 class="d-md-none navbar-brand text-white fs-sm-3" href="#">Jonathan Owens</h1>
           
         </h1>
         <button
@@ -52,47 +53,37 @@
       </div>
       <div class="container my-3">
         <h2>About Me</h2>
-        <div class="flex">
-          <p id="about">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
-            repellat? Hic eos sequi, optio alias ab quia expedita, officia quas
-            aliquam excepturi ex consequuntur fuga perspiciatis nisi omnis
-            recusandae molestias! Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Esse, repellat? Hic eos sequi, optio alias ab quia
-            expedita, officia quas aliquam excepturi ex consequuntur fuga
-            perspiciatis nisi omnis recusandae molestias! Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Esse, repellat? Hic eos sequi,
-            optio alias ab quia expedita, officia quas aliquam excepturi ex
-            consequuntur fuga perspiciatis nisi omnis recusandae molestias!Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Esse, repellat?
-            Hic eos sequi, optio alias ab quia expedita, officia quas aliquam
-            excepturi ex consequuntur fuga perspiciatis nisi omnis recusandae
-            molestias!
+        <div class="d-flex flex-column flex-md-row">
+          <p id="about" class="">
+            I design and code websites, and I love what I do. Hailing from O'Fallon, Missouri, I learned code on a whim several years ago and have been learning more ever since. Nice to meet you!
+
           </p>
-          <img src="images/jonathanPortrait.webp" class="img-fluid" alt="..." />
+          <img src="images/jonathanPortrait.webp" class="align-self-center" style="max-width: 400px;" alt="..." />
         </div>
       </div>
-      <div class="container">
-        <h2 id="services">Services</h2>
+      <div class="container cta-section">
+        <h2 id="services">Want to improve your business?</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-          consequuntur aut illo ipsum obcaecati aperiam. Voluptate, distinctio
-          exercitationem soluta quaerat, optio sapiente ratione recusandae
-          cumque asperiores iusto voluptatem, maxime dicta.
+          With a better online presence, you establish credibility that helps you stand out from the others. I can help you with that. Here is a list of what I can do:
         </p>
         <ul>
-          <li>HTML</li>
-          <li>CSS</li>
+          <li>Website Design: I will make a clean, mobile-friendly design for you or your company.</li>
+          <li>Revisions: Not like what you see? </li>
           <li>JavaScript</li>
         </ul>
+      </div>
+      <div class="container">
+        
         <h2 id="portfolio">Portfolio</h2>
         <div class="card-group">
           <div class="card">
-            <img
-              src="images/jonathanBeardDesktop.webp"
-              class="card-img-top"
-              alt="..."
-            />
+            <a href="https://jonathanbeard.netlify.app/">
+              <img
+                src="images/jonathanBeardDesktop.webp"
+                class="card-img-top"
+                alt="..."
+              />
+            </a>
             <div class="card-body">
               <h5 class="card-title">Audio Engineer Website</h5>
               <p class="card-text">
@@ -103,15 +94,17 @@ I ultilize the Spotify API to keep the site updated with his discography playlis
             </div>
           </div>
           <div class="card">
-            <img
-              src="images/jonathansAntiquesDesktop.webp"
-              class="card-img-top"
-              alt="..."
-            />
+            <a href="https://jonathansantiques.netlify.app/">
+              <img
+                src="images/jonathansAntiquesDesktop.webp"
+                class="card-img-top"
+                alt="..."
+              />
+            </a>
             <div class="card-body">
               <h5 class="card-title">Fictional WordPress Business</h5>
               <p class="card-text">
-                I designed and developed a fictional antique store website using WordPress with the Astra theme, exploring its design capabilities to create an elegant, user-friendly layout. The project initially featured WooCommerce functionality, but I streamlined the build for simplicity and hosting efficiency. To optimize performance and security, I converted the final version into a fully static HTML site using the Static Plugin.
+                I designed and developed a fictional antique store website using WordPress with the Astra theme.
               </p>
             </div>
           </div>
@@ -230,20 +223,10 @@ I ultilize the Spotify API to keep the site updated with his discography playlis
           </div>
         </div>
       </div>
-      <div class="container my-3">
-        <h2>Feel free to contact me!</h2>
+      <div class="container my-3 cta-section">
+        <h2>Let's start a project!</h2>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-          rerum ullam adipisci enim ex repudiandae dolor ipsum odio nobis
-          dolorem, accusantium, sed quae libero consectetur asperiores.
-          Consequatur animi commodi provident. Lorem, ipsum dolor sit amet
-          consectetur adipisicing elit. Deleniti rerum ullam adipisci enim ex
-          repudiandae dolor ipsum odio nobis dolorem, accusantium, sed quae
-          libero consectetur asperiores. Consequatur animi commodi provident.
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-          rerum ullam adipisci enim ex repudiandae dolor ipsum odio nobis
-          dolorem, accusantium, sed quae libero consectetur asperiores.
-          Consequatur animi commodi provident.
+          Interested in working together? We should queue up a time to chat. I’ll buy the coffee.
         </p>
       </div>
     </main>

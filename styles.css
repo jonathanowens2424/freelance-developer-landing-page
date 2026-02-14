@@ -1,8 +1,14 @@
 :root {
   --main-color: #4ad9ca;
-  --secondary-color: #0f2a3d;
+  --secondary-color: #1a2847;
+  --dark-color: #2a9b8f;
 }
 
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
 html {
   margin: 0;
   padding: 0;
@@ -39,11 +45,29 @@ html {
 }
 
 .accordion-button {
-  background-color: #4ad9ca;
+  background-color: var(--dark-color);
   color: white;
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: #7fe5d8;
+  background-color: var(--main-color);
   color: white;
+}
+
+.navbar-toggler {
+  border-color: white;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.cta-section {
+  background: var(--main-color);
+  padding: 3rem;
+  border-left: 5px solid var(--secondary-color);
+}
+
+.card img:hover {
+  border: 3px solid var(--dark-color);
 }
