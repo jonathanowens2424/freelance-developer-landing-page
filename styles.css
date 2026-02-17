@@ -13,6 +13,12 @@ html {
   margin: 0;
   padding: 0;
 }
+
+h1,
+h2,
+section {
+  scroll-margin-top: 100px;
+}
 .flex {
   display: flex;
 }
@@ -28,11 +34,15 @@ html {
 
 .card img {
   height: 300px;
-  border: 3px solid transparent;
+  border: 3px solid #f0fafa;
 }
 
 .card img:hover {
   border: 3px solid var(--dark-color);
+}
+
+.card-body {
+  background-color: #f0fafa;
 }
 
 .bg-image {
@@ -64,7 +74,7 @@ html {
 .cta-section p,
 .cta-section ul,
 .accordion-body p {
-  max-width: 65ch;
+  max-width: 90ch;
 }
 
 footer p {
