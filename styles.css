@@ -28,6 +28,11 @@ html {
 
 .card img {
   height: 300px;
+  border: 3px solid transparent;
+}
+
+.card img:hover {
+  border: 3px solid var(--dark-color);
 }
 
 .bg-image {
@@ -44,6 +49,40 @@ html {
   text-shadow: 2px 2px 4px black;
 }
 
+.cta-section {
+  background: var(--main-color);
+  padding: 2rem;
+  border-left: 5px solid var(--secondary-color);
+}
+
+@media (max-width: 600px) {
+  .cta-section {
+    border: none;
+  }
+}
+
+.cta-section p,
+.cta-section ul,
+.accordion-body p {
+  max-width: 65ch;
+}
+
+footer p {
+  background-color: var(--dark-color);
+  color: white;
+}
+
+/* Navigation */
+
+.navbar-toggler {
+  border-color: white;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Accordion  */
 .accordion-button {
   background-color: var(--dark-color);
   color: white;
@@ -54,25 +93,8 @@ html {
   color: white;
 }
 
-.navbar-toggler {
-  border-color: white;
+.accordion-body {
+  background-color: #f0fafa;
 }
 
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-.cta-section {
-  background: var(--main-color);
-  padding: 3rem;
-  border-left: 5px solid var(--secondary-color);
-}
-
-.card img:hover {
-  border: 3px solid var(--dark-color);
-}
-
-footer p {
-  background-color: var(--dark-color);
-  color: var(white);
-}
+/* CTA section and  */
