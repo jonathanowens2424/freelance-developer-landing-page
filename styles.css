@@ -19,6 +19,15 @@ h2,
 section {
   scroll-margin-top: 100px;
 }
+
+h1,
+h2,
+h3,
+p,
+li,
+ul {
+  color: #1a2847;
+}
 .flex {
   display: flex;
 }
@@ -46,9 +55,7 @@ section {
 }
 
 .bg-image {
-  background-image: url(/images/tealHeroImage.webp);
-  background-size: cover;
-  padding: 2rem;
+  background-color: var(--dark-color);
 }
 
 .bg-image-footer {
@@ -100,7 +107,7 @@ footer p {
 
 .accordion-button:not(.collapsed) {
   background-color: var(--main-color);
-  color: white;
+  color: #1a2e2d;
 }
 
 .accordion-body {
