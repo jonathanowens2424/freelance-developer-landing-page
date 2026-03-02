@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Inter";
+  src: url(/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
 :root {
   --main-color: #4ad9ca;
   --secondary-color: #1a2847;
@@ -6,8 +10,17 @@
 
 body {
   font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol";
 }
 html {
   margin: 0;
